@@ -5,7 +5,7 @@ class Application
     resp = Rack::Response.new
     # resp.write "Hello, World."
     # resp.write "\nThe time is ____"
-
+    binding.pry
     if Time.now.hour < 12
       resp.write "Morning"
     else
