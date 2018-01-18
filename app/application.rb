@@ -8,6 +8,7 @@ class Application
     if Time.now.hour < 12
       binding.pry
       resp.write "Morning"
+      resp.write "#{Time.now.hour}"
     else
       resp.write "Afternoon"
     end
