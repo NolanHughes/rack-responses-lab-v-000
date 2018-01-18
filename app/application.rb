@@ -4,7 +4,7 @@ class Application
   def call(env)
     resp = Rack::Response.new
 
-    current_central_time = Time.now.getlocal.hour
+    current_central_time = Time.now.getlocal
     binding.pry
     if current_central_time.hour < 18
       # binding.pry
