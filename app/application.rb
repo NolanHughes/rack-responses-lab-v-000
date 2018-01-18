@@ -3,5 +3,6 @@ class App
     resp = Rack::Response.new
     resp.write "Hello, World."
     resp.write "The time is ____"
+    resp.finish
   end
 end
