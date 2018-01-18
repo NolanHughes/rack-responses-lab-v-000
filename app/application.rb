@@ -8,10 +8,10 @@ class Application
     if Time.now.localtime.hour < 12
       # binding.pry
       resp.write "Morning"
-      resp.write "It is now the hour of #{Time.now.hour}"
+      resp.write "\nIt is now the hour of #{Time.now.hour}"
     else
       resp.write "Afternoon"
-      resp.write "It is now the hour of #{Time.now.hour}"
+      resp.write "\nIt is now the hour of #{Time.now.hour}"
     end
 
     resp.finish
