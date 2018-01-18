@@ -11,6 +11,7 @@ class Application
       resp.write "It is now the hour of #{Time.now.hour}"
     else
       resp.write "Afternoon"
+      resp.write "It is now the hour of #{Time.now.hour}"
     end
 
     resp.finish
