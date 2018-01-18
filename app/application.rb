@@ -5,7 +5,7 @@ class Application
     resp = Rack::Response.new
 
     current_central_time = Time.now.getlocal.hour
-
+    binding.pry
     if current_central_time.hour < 18
       # binding.pry
       resp.write "Morning"
