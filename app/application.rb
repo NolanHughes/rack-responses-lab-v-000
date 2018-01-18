@@ -3,9 +3,10 @@ require 'pry'
 class Application
   def call(env)
     resp = Rack::Response.new
-    # resp.write "Hello, World."
-    # resp.write "\nThe time is ____"
-    if Time.now.getlocal.hour < 18
+
+    current_central_time = Time.now.getlocal.hour
+
+    if current_central_time.hour < 18
       # binding.pry
       resp.write "Morning"
       resp.write "\nIt is now the hour of #{Time.now.getlocal.hour - 6}"
